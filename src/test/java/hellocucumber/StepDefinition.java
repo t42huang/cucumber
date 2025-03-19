@@ -12,17 +12,17 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
  */
 class IsItFriday{
     static String isItFriday(String today) {
-        return "Tuesday".equals(today) ? "Yes" : "Nope";
+        return "Friday".equals(today) ? "Yes" : "Nope";
     }
 }
 public class StepDefinition {
     private String today;
     private String actualAnswer;
 
-    @Given("today is Sunday")
-    public void todayIsSunday() {
-        today = "Sunday";
-        System.out.println("today is Sunday");
+    @Given("today is {string}")
+    public void todayIsSunday(String today) {
+        this.today = today;
+        System.out.println(String.format("today is %s", today));
     }
     @When("I ask whether it's Friday yet")
     public void iAskWhetherItSFridayYet() {
