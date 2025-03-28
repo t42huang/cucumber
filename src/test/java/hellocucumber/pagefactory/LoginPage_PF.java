@@ -38,6 +38,10 @@ public class LoginPage_PF {
     public void login(){
         btnLogin.click();
     }
+
+    public void close(){
+        driver.quit();
+    }
 //    public void login(String username, String password){
 //        txtUserName.sendKeys(username);
 //        txtPassword.sendKeys(password);

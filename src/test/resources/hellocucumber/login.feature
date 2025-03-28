@@ -1,5 +1,6 @@
 Feature: Test Login
 
+  @smoke
   Scenario Outline: Login with valid credentials
     Given browser is open
     And I am on the login page
@@ -10,5 +11,5 @@ Feature: Test Login
 
     Examples:
       | username     | password  |
-      | test@sina.cn | test!test |
+      | tinahuang2019@sina.cn | Htt20190101!te |
 #    | user     | password |

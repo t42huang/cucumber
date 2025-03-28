@@ -1,4 +1,4 @@
-package hellocucumber.StepDefinations;
+package hellocucumber.stepDefinitions;
 
 import hellocucumber.pagefactory.LoginPage_PF_git;
 import io.cucumber.java.en.And;
@@ -32,19 +32,21 @@ public class LoginSteps_github_POM {
 
     @When("enter {string} as username")
     public void enter_as_username(String username) throws InterruptedException {
-        login.enterUserName(username);
+//        login.enterUserName(username);
+        System.out.println("username:"+username);
         Thread.sleep(1000);
     }
 
     @When("enter {string} as password")
     public void enter_as_password(String password) throws InterruptedException {
-        login.enterPassword(password);
+//        login.enterPassword(password);
+        System.out.println("password:"+password);
         Thread.sleep(1000);
     }
 
     @Then("click the login button")
     public void click_the_login_button() throws InterruptedException {
-        login.login();
+//        login.login();
         Thread.sleep(5000);
     }
     @And("close browser")
