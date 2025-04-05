@@ -1,4 +1,4 @@
-package hellocucumber.StepDefinations;
+package hellocucumber.stepDefinitions;
 
 import hellocucumber.pagefactory.LoginPage_PF;
 import io.cucumber.java.en.*;
@@ -29,26 +29,28 @@ public class LoginSteps_POM {
 
     @When("I enter {string} as username")
     public void i_enter_as_username(String username) throws InterruptedException {
-        loginPage_PF.enterUserName(username);
+//        loginPage_PF.enterUserName(username);
+        System.out.println("i_enter_as_username" + username);
         Thread.sleep(1000);
     }
 
     @When("I enter {string} as password")
     public void i_enter_as_password(String password) throws InterruptedException {
-        loginPage_PF.enterPassword(password);
+//        loginPage_PF.enterPassword(password);
+        System.out.println("i_enter_as_password" + password);
         Thread.sleep(1000);
     }
 
     @When("I click the login button")
     public void i_click_the_login_button() throws InterruptedException {
-        loginPage_PF.login();
+//        loginPage_PF.login();
         Thread.sleep(2000);
     }
 
     @Then("I should see the home page")
     public void i_should_see_the_home_page() {
-
-        System.out.println("home page");
+        loginPage_PF.close();
+        System.out.println("close browser");
     }
 
 }

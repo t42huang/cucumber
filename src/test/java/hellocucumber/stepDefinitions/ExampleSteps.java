@@ -1,4 +1,4 @@
-package hellocucumber;
+package hellocucumber.stepDefinitions;
 
 import io.cucumber.java.After;
 import org.openqa.selenium.By;
@@ -8,8 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExampleSteps {
 
